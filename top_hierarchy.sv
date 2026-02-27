@@ -69,14 +69,6 @@ reg_1 sreg_1(
 .fs_b(fs_b));
 
 // Multipliers section
-
-
-
-//wallace_multiplier w_m (    
-//.a({1'b1,fs_a[22:0]}),
-//.b({1'b1,fs_b[22:0]}),
-//.c(mul));
-
 assign fi_a = (|fs_a[30:23] == 0) ? {1'b0,fs_a[22:0]} : {1'b1,fs_a[22:0]};
 assign fi_b = (|fs_b[30:23] == 0) ? {1'b0,fs_b[22:0]} : {1'b1,fs_b[22:0]};
 
@@ -84,14 +76,6 @@ assign mul = {1'b1,fs_a[22:0]} * {1'b1,fs_b[22:0]};
 assign sn_mul = fi_a * fi_b;
 
 assign s_dif = fs_a[30:23] + fs_b[30:23] - 127;
-
-//wallace_multiplier nn_w_m (    
-//.a(fi_a),
-//.b(fi_b),
-//.c(sn_mul));
-
-
-
 
 // In range multiplication
 float_multiplier nm_1 (
