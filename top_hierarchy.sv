@@ -113,7 +113,7 @@ es_mod es_m (
     .e_c(fexp)
     );
 
-// second clock cycle section ----------------------------------------------------------------------
+// second clock cycle section
 
 reg_2 sec_reg (
 .clk(clk),
