@@ -57,7 +57,7 @@ logic [23:0] fi_b;
 
 logic [9:0] s_dif;
 
-// Fisrt clock cycle section -----------------------------------------------------------------------
+// Fisrt clock cycle section
 
 // Register section
 reg_1 sreg_1(
